@@ -1,4 +1,4 @@
-
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,8 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Sachin Singh's portfolio showcasing data science, Python, machine learning, and software development projects.">
   <title>Sachin Singh | Portfolio</title>
+
   <style>
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       font-family: Arial, sans-serif;
@@ -15,6 +19,7 @@
       color: #1e293b;
       line-height: 1.6;
     }
+
     header {
       background: #0f172a;
       color: white;
@@ -25,20 +30,37 @@
       flex-wrap: wrap;
       gap: 12px;
     }
-    header h2 { margin: 0; }
+
+    header h2 {
+      margin: 0;
+    }
+
     nav a {
       color: white;
       text-decoration: none;
       margin-left: 16px;
     }
+
+    nav a:hover {
+      color: #38bdf8;
+    }
+
     .hero {
       text-align: center;
       padding: 85px 20px;
       background: linear-gradient(135deg, #0f172a, #1d4ed8);
       color: white;
     }
-    .hero h1 { font-size: 42px; margin-bottom: 10px; }
-    .hero p { font-size: 18px; }
+
+    .hero h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 18px;
+    }
+
     .btn {
       display: inline-block;
       background: #38bdf8;
@@ -49,72 +71,129 @@
       text-decoration: none;
       font-weight: bold;
     }
-    section { padding: 45px 8%; }
+
+    .btn:hover {
+      background: #7dd3fc;
+    }
+
+    section {
+      padding: 45px 8%;
+    }
+
     section h2 {
       text-align: center;
       color: #1d4ed8;
       margin-bottom: 25px;
     }
+
     .card {
       background: white;
       padding: 22px;
       border-radius: 12px;
       box-shadow: 0 3px 14px #0f172a12;
     }
+
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
       gap: 20px;
     }
-    .card h3 { margin-top: 0; }
+
+    .card h3 {
+      margin-top: 0;
+    }
+
+    .card a:not(.btn) {
+      color: #1d4ed8;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .card a:hover {
+      text-decoration: underline;
+    }
+
     .skills {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       gap: 12px;
     }
+
     .skills span {
       background: #dbeafe;
       color: #1e40af;
       padding: 9px 15px;
       border-radius: 20px;
     }
-    #contact { text-align: center; }
+
+    #contact {
+      text-align: center;
+    }
+
+    #contact a:not(.btn) {
+      color: #1d4ed8;
+    }
+
     footer {
       text-align: center;
       padding: 20px;
       background: #0f172a;
       color: white;
     }
+
     @media (max-width: 600px) {
-      header { justify-content: center; }
-      nav a { margin: 0 6px; }
-      .hero h1 { font-size: 32px; }
+      header {
+        justify-content: center;
+      }
+
+      nav a {
+        margin: 0 6px;
+      }
+
+      .hero h1 {
+        font-size: 32px;
+      }
     }
   </style>
 </head>
+
 <body>
+
+  <!-- Header -->
   <header>
     <h2>Sachin Singh</h2>
+
     <nav>
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#certifications">Certifications</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
+  <!-- Hero Section -->
   <div class="hero">
     <h1>Hello, I'm Sachin Singh</h1>
     <p>Computer Science Engineering Student | Aspiring Data Scientist</p>
     <p>Python · Machine Learning · Data Analytics · Power BI</p>
+
     <a class="btn" href="#projects">Explore My Projects</a>
-    <a class="btn" href="https://github.com/Nohwar786"
-       target="_blank" rel="noopener noreferrer">My GitHub</a>
+
+    <a class="btn"
+       href="https://github.com/Nohwar786"
+       target="_blank"
+       rel="noopener noreferrer">
+      My GitHub
+    </a>
   </div>
 
+  <!-- About Section -->
   <section id="about">
     <h2>About Me</h2>
+
     <div class="card">
       I am a Computer Science Engineering student interested in data
       science, machine learning, Python development, and data analytics.
@@ -123,8 +202,10 @@
     </div>
   </section>
 
+  <!-- Skills Section -->
   <section id="skills">
     <h2>Technical Skills</h2>
+
     <div class="skills">
       <span>Python</span>
       <span>Java</span>
@@ -135,47 +216,88 @@
       <span>Machine Learning</span>
       <span>Power BI</span>
       <span>Data Analytics</span>
-      <span>HTML & CSS</span>
-      <span>Git & GitHub</span>
+      <span>HTML &amp; CSS</span>
+      <span>Git &amp; GitHub</span>
     </div>
   </section>
 
+  <!-- Projects Section -->
   <section id="projects">
     <h2>My Projects</h2>
+
     <div class="grid">
+
+      <!-- AI Resume Analyzer -->
       <div class="card">
         <h3>AI Resume Analyzer</h3>
-        <p>A Python-based application that analyzes resumes and helps
-        identify relevant skills and keywords.</p>
-        <a href="https://github.com/Nohwar786"
-           target="_blank" rel="noopener noreferrer">View on GitHub</a>
+
+        <p>
+          A Python-based application that analyzes resumes and helps
+          identify relevant skills and keywords.
+        </p>
+
+        <a href="https://github.com/Nohwar786/AI-Resume-Analyzer"
+           target="_blank"
+           rel="noopener noreferrer">
+          View on GitHub
+        </a>
       </div>
+
+      <!-- Transaction Fraud Investigator -->
       <div class="card">
-        <h3>Fraud Transaction Detection</h3>
-        <p>A machine learning project to identify potentially fraudulent
-        financial transactions from transaction data.</p>
-        <a href="https://github.com/Nohwar786"
-           target="_blank" rel="noopener noreferrer">View on GitHub</a>
+        <h3>Transaction Fraud Investigator</h3>
+
+        <p>
+          A machine learning project focused on identifying potentially
+          fraudulent financial transactions using transaction data.
+        </p>
+
+        <a href="https://github.com/Nohwar786/transaction-fraud-investigator"
+           target="_blank"
+           rel="noopener noreferrer">
+          View on GitHub
+        </a>
       </div>
+
+      <!-- Movie Recommendation System -->
       <div class="card">
         <h3>Movie Recommendation System</h3>
-        <p>A recommendation project that suggests movies using movie
-        metadata and recommendation techniques.</p>
-        <a href="https://github.com/Nohwar786"
-           target="_blank" rel="noopener noreferrer">View on GitHub</a>
+
+        <p>
+          A recommendation project that suggests movies using movie
+          metadata and recommendation techniques.
+        </p>
+
+        <a href="https://github.com/Nohwar786/Movie-Recommendation-System"
+           target="_blank"
+           rel="noopener noreferrer">
+          View on GitHub
+        </a>
       </div>
+
+      <!-- Student Management System -->
       <div class="card">
         <h3>Student Management System</h3>
-        <p>A software project focused on managing student information
-        and related academic records.</p>
-        <a href="https://github.com/Nohwar786"
-           target="_blank" rel="noopener noreferrer">View on GitHub</a>
+
+        <p>
+          A software project focused on managing student information
+          and related academic records.
+        </p>
+
+        <a href="https://github.com/Nohwar786/Student-Management-System"
+           target="_blank"
+           rel="noopener noreferrer">
+          View on GitHub
+        </a>
       </div>
+
     </div>
   </section>
 
+  <!-- Education Section -->
   <section id="education">
     <h2>Education</h2>
+
     <div class="card">
       <h3>Bachelor of Technology (B.Tech)</h3>
       <p>Computer Science Engineering</p>
@@ -183,40 +305,45 @@
     </div>
   </section>
 
+  <!-- Certifications Section -->
   <section id="certifications">
     <h2>Certifications</h2>
+
     <div class="card">
       <ul>
-        <li>Data Analytics with Python & Power BI — Virtual Internship</li>
+        <li>Data Analytics with Python &amp; Power BI — Virtual Internship</li>
       </ul>
-      <p>Add your other verified certifications here.</p>
     </div>
   </section>
 
-  
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
 
-<section id="contact">
-  <h2>Contact Me</h2>
-  <p>Interested in my work or potential opportunities? Let's connect!</p>
+    <p>
+      Interested in my work or potential opportunities? Let's connect!
+    </p>
 
-  <p>
-    <strong>Email:</strong>
-    <a href="mailto:sachinsingh10a2@gmail.com">
-      sachinsingh10a2@gmail.com
+    <p>
+      <strong>Email:</strong>
+      <a href="mailto:sachinsingh10a2@gmail.com">
+        sachinsingh10a2@gmail.com
+      </a>
+    </p>
+
+    <a class="btn"
+       href="https://github.com/Nohwar786"
+       target="_blank"
+       rel="noopener noreferrer">
+      GitHub Profile
     </a>
-  </p>
+  </section>
 
-  <a class="btn"
-     href="https://github.com/Nohwar786"
-     target="_blank"
-     rel="noopener noreferrer">
-    GitHub Profile
-  </a>
-</section>
-
-  
+  <!-- Footer -->
   <footer>
-    <p>© 2026 Sachin Singh | Personal Portfolio</p>
+    <p>&copy; 2026 Sachin Singh | Personal Portfolio</p>
   </footer>
+
 </body>
 </html>
+```
